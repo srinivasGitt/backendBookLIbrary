@@ -37,29 +37,27 @@ This will execute all test cases and display the results.
 ## Endpoints
 
 ### GET /resource
-- Description: Retrieve all resources.
-- Example: `http://localhost:3001/resource`
+- Description: Retrieve all books.
+- Example: `http://localhost:3001/books`
 
 ### POST /resource
-- Description: Create a new resource.
-- Example: `http://localhost:3001/resource`
+- Description: Create a new book.
+- Example: `http://localhost:3001/books`
 - Body: JSON object representing the resource to be created.
 
 ### GET /resource/:id
-- Description: Retrieve a specific resource by its ID.
-- Example: `http://localhost:3001/resource/123`
+- Description: Retrieve a specific book by its isbn.
+- Example: `http://localhost:3001/books/123456789`
 
 ### PUT /resource/:id
-- Description: Update a specific resource by its ID.
-- Example: `http://localhost:3001/resource/123`
+- Description: Update a specific book by its ID.
+- Example: `http://localhost:3001/books/1234567890`
 - Body: JSON object representing the updated resource.
 
 ### DELETE /resource/:id
-- Description: Delete a specific resource by its ID.
-- Example: `http://localhost:3001/resource/123`
+- Description: Delete a specific books by its isbn.
+- Example: `http://localhost:3001/books/1234567890`
 
-## Contributing
-Contributions are welcome! Feel free to submit pull requests or open issues if you encounter any problems or have suggestions for improvements.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
