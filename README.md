@@ -13,14 +13,9 @@ This is a backend API built using Node.js and Express.js. It provides endpoints 
 3. Install dependencies: `npm install`
 
 ## Usage
-### Starting the Server
-To start the server, run the following command:
-```bash
-npm start
-```
 The server will run on port 3001 by default.
 
-### Restarting the Server
+### start or Restarting the Server
 If you make changes to the code and want to restart the server, you can use nodemon. Run the following command:
 ```bash
 npm run devStart
