@@ -23,7 +23,7 @@ The server will run on port 3001 by default.
 ### Restarting the Server
 If you make changes to the code and want to restart the server, you can use nodemon. Run the following command:
 ```bash
-npm run dev
+npm run devStart
 ```
 This will start the server using nodemon, which automatically restarts the server whenever changes are detected in the code.
 
