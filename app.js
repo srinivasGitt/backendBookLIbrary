@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -7,15 +9,18 @@ const cors = require('cors');
 // Initialize Express app
 const app = express();
 
+const mongoUrl = process.env.MONGO_URL;
+
 // Middleware
 app.use(bodyParser.json());
 // Use CORS middleware
 app.use(cors({
-  origin: 'http://localhost:4200' // Allow requests from this origin
+  origin: 'http://localhost:54162'  // Allow requests from this origin
 }));
 
+
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/books', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true }).then(console.log(mongoUrl));
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 

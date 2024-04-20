@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../server');
+const app = require('../app');
 
 describe('Test CRUD operations for books API', () => {
   let isbn;
@@ -12,7 +12,7 @@ describe('Test CRUD operations for books API', () => {
         author: 'John Doe',
         description: 'A sample book for testing',
         publicationYear: 2024,
-        isbn: '1234567890'
+        isbn: '1234567897'
       });
     expect(res.statusCode).toBe(201);
     isbn = res.body.isbn;
