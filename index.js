@@ -15,7 +15,7 @@ const mongoUrl = process.env.MONGO_URL;
 app.use(bodyParser.json());
 // Use CORS middleware
 app.use(cors({
-  origin: 'http://localhost:54162'  // Allow requests from this origin
+  origin: 'https://booklibraryqangular.netlify.app'  // Allow requests from this origin
 }));
 
 
